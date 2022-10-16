@@ -13,6 +13,8 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         self.selectedIndex = 1
+        self.tabBar.barTintColor = .baseGreenLight
+        self.tabBar.backgroundColor = .baseGreenLight
     }
 
 

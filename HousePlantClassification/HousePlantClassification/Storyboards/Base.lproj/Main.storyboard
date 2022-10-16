@@ -95,21 +95,59 @@
             </objects>
             <point key="canvasLocation" x="471" y="781"/>
         </scene>
-        <!--View Controller-->
+        <!--Plant Search View Controller-->
         <scene sceneID="tWg-7I-0Mz">
             <objects>
-                <viewController id="9h7-Uw-YFT" sceneMemberID="viewController">
+                <viewController id="9h7-Uw-YFT" customClass="PlantSearchViewController" customModule="HousePlantClassification" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qTK-WO-6O9">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectImageTarget" translatesAutoresizingMaskIntoConstraints="NO" id="GGS-Ek-wCO">
+                                <rect key="frame" x="16" y="127.00000000000003" width="358" height="337.66666666666674"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKR-wY-tUU">
+                                <rect key="frame" x="58.666666666666657" y="619" width="273" height="70"/>
+                                <color key="backgroundColor" red="0.98039215800000001" green="0.87450981139999995" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="OIu-eJ-LFU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="bHU-T0-t9j"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select Image"/>
+                                <connections>
+                                    <action selector="tappedSelectImage:" destination="9h7-Uw-YFT" eventType="touchUpInside" id="KIQ-z0-E26"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="mMf-GX-HdB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GGS-Ek-wCO" firstAttribute="centerX" secondItem="mMf-GX-HdB" secondAttribute="centerX" id="2c9-1C-td8"/>
+                            <constraint firstItem="xKR-wY-tUU" firstAttribute="width" secondItem="qTK-WO-6O9" secondAttribute="width" multiplier="0.7" id="Fgh-Bz-kbQ"/>
+                            <constraint firstItem="xKR-wY-tUU" firstAttribute="centerX" secondItem="mMf-GX-HdB" secondAttribute="centerX" id="IPr-Ie-jQS"/>
+                            <constraint firstItem="GGS-Ek-wCO" firstAttribute="height" secondItem="qTK-WO-6O9" secondAttribute="height" multiplier="0.4" id="OXz-ml-C4F"/>
+                            <constraint firstItem="GGS-Ek-wCO" firstAttribute="leading" secondItem="mMf-GX-HdB" secondAttribute="leading" constant="16" id="e38-Bh-anZ"/>
+                            <constraint firstItem="mMf-GX-HdB" firstAttribute="bottom" secondItem="xKR-wY-tUU" secondAttribute="bottom" constant="72" id="nL7-5f-5QZ"/>
+                            <constraint firstItem="mMf-GX-HdB" firstAttribute="trailing" secondItem="GGS-Ek-wCO" secondAttribute="trailing" constant="16" id="vOn-DD-TqW"/>
+                            <constraint firstItem="GGS-Ek-wCO" firstAttribute="top" secondItem="mMf-GX-HdB" secondAttribute="top" constant="36" id="xhE-i2-DET"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cyv-qN-AaZ"/>
+                    <navigationItem key="navigationItem" id="cyv-qN-AaZ">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="xWu-4q-YhT">
+                            <connections>
+                                <action selector="tappedInfo:" destination="9h7-Uw-YFT" id="EZ3-uk-JMa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="selectImageButton" destination="xKR-wY-tUU" id="kSf-2M-v3D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bku-LV-NQg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-466" y="1510"/>
+            <point key="canvasLocation" x="-466.15384615384613" y="1509.9526066350711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0rC-Rd-BON">
@@ -130,8 +168,10 @@
     </scenes>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
         <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="selectImageTarget" width="360" height="360"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
