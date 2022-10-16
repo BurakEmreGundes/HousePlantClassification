@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		37D57F79ED5C39BFCF644E35 /* libPods-HousePlantClassification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB3F7C56B63D3571741B510 /* libPods-HousePlantClassification.a */; };
+		4A1D9F2228FC098A0094BE7A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D9F2128FC098A0094BE7A /* UIColor.swift */; };
 		4AB02C0728FC05CD009443D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB02C0628FC05CD009443D4 /* AppDelegate.swift */; };
 		4AB02C0928FC05CD009443D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB02C0828FC05CD009443D4 /* SceneDelegate.swift */; };
 		4AB02C0B28FC05CD009443D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB02C0A28FC05CD009443D4 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A1D9F2128FC098A0094BE7A /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		4AB02C0328FC05CD009443D4 /* HousePlantClassification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HousePlantClassification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB02C0628FC05CD009443D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AB02C0828FC05CD009443D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +44,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A1D9F1F28FC09680094BE7A /* SharedExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A1D9F2028FC09720094BE7A /* UIColor */,
+			);
+			path = SharedExtensions;
+			sourceTree = "<group>";
+		};
+		4A1D9F2028FC09720094BE7A /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				4A1D9F2128FC098A0094BE7A /* UIColor.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
 		4AB02BFA28FC05CD009443D4 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +81,7 @@
 		4AB02C0528FC05CD009443D4 /* HousePlantClassification */ = {
 			isa = PBXGroup;
 			children = (
+				4A1D9F1F28FC09680094BE7A /* SharedExtensions */,
 				4AB02C0628FC05CD009443D4 /* AppDelegate.swift */,
 				4AB02C0828FC05CD009443D4 /* SceneDelegate.swift */,
 				4AB02C0A28FC05CD009443D4 /* ViewController.swift */,
@@ -189,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB02C0B28FC05CD009443D4 /* ViewController.swift in Sources */,
+				4A1D9F2228FC098A0094BE7A /* UIColor.swift in Sources */,
 				4AB02C0728FC05CD009443D4 /* AppDelegate.swift in Sources */,
 				4AB02C0928FC05CD009443D4 /* SceneDelegate.swift in Sources */,
 			);
