@@ -18,7 +18,7 @@ extension UINavigationController{
             let navBarAppearance = UINavigationBarAppearance()
             navBarAppearance.backgroundColor = .baseGreenLight
             navBarAppearance.backgroundEffect = nil
-            navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.boldSystemFont(ofSize: 16)]
+            navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.boldSystemFont(ofSize: 22)]
             navigationBar.scrollEdgeAppearance = navBarAppearance
             navigationBar.standardAppearance = navBarAppearance
         }
