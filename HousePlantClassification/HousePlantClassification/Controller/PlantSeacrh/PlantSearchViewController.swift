@@ -50,6 +50,11 @@ class PlantSearchViewController: UIViewController {
         return picker
     }()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(self.navigationController?.viewControllers)
+    }
+    
     
 
     @IBAction func tappedSelectImage(_ sender: Any) {
