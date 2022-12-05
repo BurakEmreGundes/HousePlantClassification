@@ -16,6 +16,13 @@ class TabBarViewController: UITabBarController {
         self.tabBar.barTintColor = .baseGreenLight
         self.tabBar.backgroundColor = .baseGreenLight
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        print(self.navigationController?.viewControllers)
+    }
 
 
 }

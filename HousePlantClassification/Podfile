@@ -2,4 +2,6 @@ platform :ios, '9.0'
 
 target 'HousePlantClassification' do
 	pod 'Kingfisher'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Firestore'
 end

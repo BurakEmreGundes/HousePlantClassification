@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="262" id="e2J-3u-0ED" customClass="PlantListTableViewCell" customModule="HousePlantClassification" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="502" height="276"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e2J-3u-0ED" id="MTe-gZ-a4e">
+                <rect key="frame" x="0.0" y="0.0" width="502" height="276"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleplant" translatesAutoresizingMaskIntoConstraints="NO" id="yG5-ZF-BII">
+                        <rect key="frame" x="175.66666666666669" y="26" width="150.66666666666669" height="170.66666666666666"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deve Tabanı Bitkisi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcj-CN-pfI">
+                        <rect key="frame" x="46" y="218.66666666666666" width="410" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="ZGV-oE-ZmO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arayan Kişi: Burak Emre Gündeş" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tda-Eh-ONP">
+                        <rect key="frame" x="46" y="244.66666666666666" width="410" height="19.999999999999972"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="2uY-Na-X0J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkG-ZM-qD1">
+                        <rect key="frame" x="445" y="16" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="cTk-xz-iLK"/>
+                            <constraint firstAttribute="height" constant="45" id="gbw-O8-DT9"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemRedColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system" title=""/>
+                        <connections>
+                            <action selector="tappedFavouriteButton:" destination="e2J-3u-0ED" eventType="touchUpInside" id="X2i-TG-WnG"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="tda-Eh-ONP" firstAttribute="top" secondItem="Zcj-CN-pfI" secondAttribute="bottom" constant="6" id="3Br-9L-fB9"/>
+                    <constraint firstItem="DkG-ZM-qD1" firstAttribute="top" secondItem="MTe-gZ-a4e" secondAttribute="top" constant="16" id="3Xq-ep-L4x"/>
+                    <constraint firstItem="yG5-ZF-BII" firstAttribute="height" secondItem="MTe-gZ-a4e" secondAttribute="height" multiplier="0.4" id="4GX-Zg-x7k"/>
+                    <constraint firstAttribute="bottom" secondItem="tda-Eh-ONP" secondAttribute="bottom" constant="26" id="5BK-C9-aBE"/>
+                    <constraint firstItem="tda-Eh-ONP" firstAttribute="leading" secondItem="Zcj-CN-pfI" secondAttribute="leading" id="CG9-uX-N8R"/>
+                    <constraint firstItem="tda-Eh-ONP" firstAttribute="trailing" secondItem="Zcj-CN-pfI" secondAttribute="trailing" id="EkG-uq-HDK"/>
+                    <constraint firstItem="yG5-ZF-BII" firstAttribute="top" secondItem="MTe-gZ-a4e" secondAttribute="top" constant="26" id="P5K-fG-xW6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Zcj-CN-pfI" secondAttribute="trailing" constant="26" id="QFg-4A-nRe"/>
+                    <constraint firstItem="Zcj-CN-pfI" firstAttribute="top" secondItem="yG5-ZF-BII" secondAttribute="bottom" constant="22" id="ben-qY-aki"/>
+                    <constraint firstItem="Zcj-CN-pfI" firstAttribute="leading" secondItem="MTe-gZ-a4e" secondAttribute="leadingMargin" constant="26" id="ce9-Ca-PRV"/>
+                    <constraint firstAttribute="trailing" secondItem="DkG-ZM-qD1" secondAttribute="trailing" constant="12" id="eob-Ew-9GY"/>
+                    <constraint firstItem="yG5-ZF-BII" firstAttribute="centerX" secondItem="MTe-gZ-a4e" secondAttribute="centerX" id="qts-H7-YSR"/>
+                    <constraint firstItem="yG5-ZF-BII" firstAttribute="width" secondItem="MTe-gZ-a4e" secondAttribute="width" multiplier="0.3" id="z7B-XU-w0t"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                        <real key="value" value="1"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentView" destination="MTe-gZ-a4e" id="qSj-xN-VgK"/>
+                <outlet property="hearthButton" destination="DkG-ZM-qD1" id="vah-fQ-tt1"/>
+            </connections>
+            <point key="canvasLocation" x="346.15384615384613" y="108.76777251184834"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="sampleplant" width="170.66667175292969" height="170.66667175292969"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
