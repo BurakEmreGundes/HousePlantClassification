@@ -11,10 +11,20 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configure()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    private func configure(){
+        configureNavBar()
+    }
+    
+    private func configureNavBar(){
+        self.navigationItem.title = "Profilim"
+        self.navigationController?.configureNavigationForBaseGreen()
     }
     
     @IBAction func tappedLogout(_ sender: Any) {

@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		37D57F79ED5C39BFCF644E35 /* libPods-HousePlantClassification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB3F7C56B63D3571741B510 /* libPods-HousePlantClassification.a */; };
+		4A0A8F3829396B5400AD3393 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A8F3729396B5400AD3393 /* Inceptionv3.mlmodel */; };
+		4A0A8F3B2939705500AD3393 /* UserSearchFlower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A8F3A2939705500AD3393 /* UserSearchFlower.swift */; };
+		4A0A8F3E293970CB00AD3393 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A8F3D293970CB00AD3393 /* Flower.swift */; };
+		4A0A8F40293A14F200AD3393 /* PlantListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0A8F3F293A14F200AD3393 /* PlantListTableViewCell.xib */; };
+		4A0A8F45293A1D6800AD3393 /* CustomIBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A8F44293A1D6800AD3393 /* CustomIBView.swift */; };
+		4A0A8F48293A1E1E00AD3393 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A8F47293A1E1E00AD3393 /* UIView.swift */; };
+		4A0A8F4A293A1ECB00AD3393 /* PlantListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A8F49293A1ECB00AD3393 /* PlantListTableViewCell.swift */; };
+		4A0A8F4D293A23A800AD3393 /* ClassNameGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A8F4C293A23A800AD3393 /* ClassNameGettable.swift */; };
+		4A0A8F50293A242A00AD3393 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A8F4F293A242A00AD3393 /* UITableView.swift */; };
 		4A1D9F2228FC098A0094BE7A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D9F2128FC098A0094BE7A /* UIColor.swift */; };
 		4A1D9F2428FC1BEF0094BE7A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D9F2328FC1BEF0094BE7A /* TabBarViewController.swift */; };
 		4A1D9F2E28FC21020094BE7A /* PlantSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D9F2D28FC21020094BE7A /* PlantSearchViewController.swift */; };
@@ -33,6 +42,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A0A8F3729396B5400AD3393 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		4A0A8F3A2939705500AD3393 /* UserSearchFlower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchFlower.swift; sourceTree = "<group>"; };
+		4A0A8F3D293970CB00AD3393 /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
+		4A0A8F3F293A14F200AD3393 /* PlantListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantListTableViewCell.xib; sourceTree = "<group>"; };
+		4A0A8F44293A1D6800AD3393 /* CustomIBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIBView.swift; sourceTree = "<group>"; };
+		4A0A8F47293A1E1E00AD3393 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		4A0A8F49293A1ECB00AD3393 /* PlantListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListTableViewCell.swift; sourceTree = "<group>"; };
+		4A0A8F4C293A23A800AD3393 /* ClassNameGettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameGettable.swift; sourceTree = "<group>"; };
+		4A0A8F4F293A242A00AD3393 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		4A1D9F2128FC098A0094BE7A /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		4A1D9F2328FC1BEF0094BE7A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		4A1D9F2D28FC21020094BE7A /* PlantSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantSearchViewController.swift; sourceTree = "<group>"; };
@@ -74,9 +92,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A0A8F392939704000AD3393 /* UserFlower */ = {
+			isa = PBXGroup;
+			children = (
+				4A0A8F3A2939705500AD3393 /* UserSearchFlower.swift */,
+			);
+			path = UserFlower;
+			sourceTree = "<group>";
+		};
+		4A0A8F3C2939709300AD3393 /* Flower */ = {
+			isa = PBXGroup;
+			children = (
+				4A0A8F3D293970CB00AD3393 /* Flower.swift */,
+			);
+			path = Flower;
+			sourceTree = "<group>";
+		};
+		4A0A8F41293A1D3F00AD3393 /* PlantList */ = {
+			isa = PBXGroup;
+			children = (
+				4A0A8F3F293A14F200AD3393 /* PlantListTableViewCell.xib */,
+				4A0A8F49293A1ECB00AD3393 /* PlantListTableViewCell.swift */,
+			);
+			path = PlantList;
+			sourceTree = "<group>";
+		};
+		4A0A8F42293A1D4C00AD3393 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				4A0A8F43293A1D5100AD3393 /* Shared */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		4A0A8F43293A1D5100AD3393 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4A0A8F44293A1D6800AD3393 /* CustomIBView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4A0A8F46293A1E0A00AD3393 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				4A0A8F47293A1E1E00AD3393 /* UIView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		4A0A8F4B293A239600AD3393 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4A0A8F4C293A23A800AD3393 /* ClassNameGettable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4A0A8F4E293A241A00AD3393 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				4A0A8F4F293A242A00AD3393 /* UITableView.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 		4A1D9F1F28FC09680094BE7A /* SharedExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				4A0A8F4E293A241A00AD3393 /* UITableView */,
+				4A0A8F46293A1E0A00AD3393 /* UIView */,
 				4A1D9F2F28FC21500094BE7A /* UINavigationController */,
 				4A1D9F2028FC09720094BE7A /* UIColor */,
 			);
@@ -94,6 +179,8 @@
 		4A1D9F2528FC1CA80094BE7A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4A0A8F3C2939709300AD3393 /* Flower */,
+				4A0A8F392939704000AD3393 /* UserFlower */,
 				4AA162A6290A8EBA006ACFF5 /* User */,
 			);
 			path = Model;
@@ -102,6 +189,8 @@
 		4A1D9F2628FC1CAF0094BE7A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4A0A8F42293A1D4C00AD3393 /* General */,
+				4A0A8F41293A1D3F00AD3393 /* PlantList */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +279,7 @@
 		4A96120928FDBC660040EAEE /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4A0A8F4B293A239600AD3393 /* Protocols */,
 				4A7009C829099D540084E6D2 /* Plists */,
 				4A96120628FDB87E0040EAEE /* Singleton */,
 			);
@@ -252,6 +342,7 @@
 				4AB02C0F28FC05CE009443D4 /* Assets.xcassets */,
 				4AB02C1428FC05CE009443D4 /* Info.plist */,
 				4AC450F12909A940007D0004 /* GoogleService-Info.plist */,
+				4A0A8F3729396B5400AD3393 /* Inceptionv3.mlmodel */,
 				4A96120928FDBC660040EAEE /* Utilities */,
 				4A1D9F1F28FC09680094BE7A /* SharedExtensions */,
 			);
@@ -363,6 +454,7 @@
 				4AB02C1328FC05CE009443D4 /* LaunchScreen.storyboard in Resources */,
 				4AC450F22909A940007D0004 /* GoogleService-Info.plist in Resources */,
 				4AB02C1028FC05CE009443D4 /* Assets.xcassets in Resources */,
+				4A0A8F40293A14F200AD3393 /* PlantListTableViewCell.xib in Resources */,
 				4AA162A02909CB51006ACFF5 /* PlantDetail.storyboard in Resources */,
 				4AB02C0E28FC05CD009443D4 /* Main.storyboard in Resources */,
 			);
@@ -420,13 +512,21 @@
 				4AC451002909C511007D0004 /* PlantDetailViewController.swift in Sources */,
 				4A7009CD2909A17E0084E6D2 /* RegisterViewController.swift in Sources */,
 				4A1D9F2E28FC21020094BE7A /* PlantSearchViewController.swift in Sources */,
+				4A0A8F4A293A1ECB00AD3393 /* PlantListTableViewCell.swift in Sources */,
 				4AC450F62909B440007D0004 /* DenemeViewController.swift in Sources */,
+				4A0A8F50293A242A00AD3393 /* UITableView.swift in Sources */,
 				4AB02C0B28FC05CD009443D4 /* ViewController.swift in Sources */,
 				4A96120828FDB8A70040EAEE /* FirebaseAuthManager.swift in Sources */,
+				4A0A8F45293A1D6800AD3393 /* CustomIBView.swift in Sources */,
 				4AC450FB2909C37B007D0004 /* ProfileViewController.swift in Sources */,
+				4A0A8F4D293A23A800AD3393 /* ClassNameGettable.swift in Sources */,
+				4A0A8F3B2939705500AD3393 /* UserSearchFlower.swift in Sources */,
 				4A1D9F2228FC098A0094BE7A /* UIColor.swift in Sources */,
+				4A0A8F48293A1E1E00AD3393 /* UIView.swift in Sources */,
 				4AA162A8290A8EC8006ACFF5 /* User.swift in Sources */,
 				4AA162A22909DB75006ACFF5 /* SceneDelegate.swift in Sources */,
+				4A0A8F3829396B5400AD3393 /* Inceptionv3.mlmodel in Sources */,
+				4A0A8F3E293970CB00AD3393 /* Flower.swift in Sources */,
 				4AB02C0728FC05CD009443D4 /* AppDelegate.swift in Sources */,
 				4A1D9F2428FC1BEF0094BE7A /* TabBarViewController.swift in Sources */,
 				4AA162AA291441BA006ACFF5 /* LoginViewController.swift in Sources */,
