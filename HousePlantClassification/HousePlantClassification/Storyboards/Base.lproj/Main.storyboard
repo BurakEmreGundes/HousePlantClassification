@@ -100,21 +100,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKh-A4-w2Z">
-                                <rect key="frame" x="111" y="405" width="168" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Go To Plant Details"/>
-                                <connections>
-                                    <action selector="tappedPlantDetails:" destination="VWI-Hq-C9d" eventType="touchUpInside" id="Wa7-5D-fGR"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HrA-K4-bTw">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SNJ-JT-NJY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HrA-K4-bTw" firstAttribute="top" secondItem="SNJ-JT-NJY" secondAttribute="top" id="Ep5-Gm-pRP"/>
+                            <constraint firstItem="SNJ-JT-NJY" firstAttribute="trailing" secondItem="HrA-K4-bTw" secondAttribute="trailing" id="gsu-Ga-EJE"/>
+                            <constraint firstItem="HrA-K4-bTw" firstAttribute="leading" secondItem="SNJ-JT-NJY" secondAttribute="leading" id="n6D-HS-iNM"/>
+                            <constraint firstItem="SNJ-JT-NJY" firstAttribute="bottom" secondItem="HrA-K4-bTw" secondAttribute="bottom" id="r3h-pq-OJI"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="K0I-Zf-f7g"/>
                     <navigationItem key="navigationItem" id="9F0-dE-e6v"/>
+                    <connections>
+                        <outlet property="tableView" destination="HrA-K4-bTw" id="tKP-8z-M2T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haT-8c-v9Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

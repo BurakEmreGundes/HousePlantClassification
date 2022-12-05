@@ -76,6 +76,26 @@ class PlantSearchViewController: UIViewController {
     }
     private func detect(image : CIImage){
         
+        guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else {
+            fatalError("Cannot import model")
+        }
+        
+        let request = VNCoreMLRequest(model: model){ (request,error) in
+            let classification = request.results?.first as? VNClassificationObservation
+            
+            self.navigationItem.title = classification?.identifier
+        }
+        
+        let handler = VNImageRequestHandler(ciImage: image)
+        
+        do{
+            try handler.perform([request])
+        }catch {
+            print(error)
+        }
+       
+        
+        
     }
     
     @IBAction func tappedInfo(_ sender: Any) {
